@@ -1,0 +1,16 @@
+@keyframes move {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(10%, 0px);
+  }
+}
+
+.page__link-arrow {
+  display: inline-block;
+}
+
+.page__link:hover .page__link-arrow {
+  animation: move 0.3s ease-in-out 4 alternate;
+}

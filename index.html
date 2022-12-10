@@ -4,16 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
-<body class="body">
+<body class="root">
   <div class="page">
 
-    <header class="header">
+    <header class="header page__header">
       <div class="logo logo_place_header header__logo"></div>
       <h1 class="header__title">Научиться учиться</h1>
-      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header__link" href="#">Узнать &xrarr;</a></p>
+      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header__link page__link" href="#">Узнать <span class="page__link-arrow">&xrarr;</span></a></p>
       <div class="header__square-pic"></div>
       <div class="header__main-illustration"></div>
     </header>
@@ -29,6 +28,38 @@
           </div>
         </article>
       </section>
+
+      <section class="techniques page__techniques">
+        <h2 class="section-title techniques__title">Техники обучения</h2>
+        <p class="section-subtitle techniques__subtitle">Пять практик от Барбары Оакли</p>
+        <ul class="cards techniques__cards">
+          <li class="cards__item">
+              <img class="cards__image" src="./images/cards-attention.png" alt="Фотография книги с названием: 101 эссе, которые изменят ваше мышление">
+              <h3 class="cards__title">Два вида внимания</h3>
+              <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
+          </li>
+          <li class="cards__item">
+              <img class="cards__image" src="./images/cards-recall.png" alt="Фотография мраморной статуи мальчика, играющего на дудке">
+              <h3 class="cards__title">Recall</h3>
+              <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
+          </li>
+          <li class="cards__item">
+              <img class="cards__image" src="./images/cards-interliving.png" alt="Фотография большого помещения с множеством людей">
+              <h3 class="cards__title">Интерливинг</h3>
+              <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+          </li>
+          <li class="cards__item">
+              <img class="cards__image" src="./images/cards-question.png" alt="Изображение человека стоящего во внутреннем дворе большого здания с множеством окон">
+              <h3 class="cards__title">Вопросы</h3>
+              <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
+          </li>
+          <li class="cards__item">
+              <img class="cards__image" src="./images/cards-competence.png" alt="Фотография стопки книг на ладони">
+              <h3 class="cards__title">Иллюзия компетентности</h3>
+              <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
+          </li>
+        </ul>
+      </section>  <!--  .techniques  -->
 
       <section class="digits">
         <h2 class="section-title digits__title">Цифры и факты</h2>
@@ -78,13 +109,13 @@
         </ul>  <!--  .table  -->
       </section>  <!--  .digits  -->
 
-      <section class="feynman">
+      <section class="feynman page__feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <a href="#" class="feynman__link">Подробнее &xrarr;</a>
+        <a href="#" class="feynman__link page__link">Подробнее <span class="page__link-arrow">&xrarr;</span></a>
       </section>
 
-      <section class="kaufman">
+      <section class="kaufman page__kaufman">
         <div class="kaufman__triangle"></div>
         <h2 class="section-title kaufman__title section-title_theme_dark">Принципы обучения</h2>
         <p class="section-subtitle kaufman__subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
@@ -160,11 +191,13 @@
         </div>
         <div class="footer__column footer__column_content_social">
           <h2 class="footer__column-heading">Соцсети</h2>
-          <ul class="footer__column-links">
-            <li><a class="footer__column-link" href="#" target="_blank" rel="noopener"><img src="./images/youtube-icon.svg" alt="Ютуб" class="footer__social-icon">YouTube</a></li>
-            <li><a class="footer__column-link" href="#" target="_blank" rel="noopener"><img src="./images/vk_color_white.svg" alt="ВКонтакте" class="footer__social-icon">ВКонтакте</a></li>
-            <li><a class="footer__column-link" href="#" target="_blank" rel="noopener"><img src="./images/tiktok-icon.svg" alt="ТикТок" class="footer__social-icon">TikTok</a></li>
-          </ul>
+          <nav>
+            <ul class="footer__column-links">
+              <li><a class="footer__column-link page__link" href="#" target="_blank" rel="noopener"><img src="./images/youtube-icon.svg" alt="Ютуб" class="footer__social-icon">YouTube</a></li>
+              <li><a class="footer__column-link page__link" href="#" target="_blank" rel="noopener"><img src="./images/vk_color_white.svg" alt="ВКонтакте" class="footer__social-icon">ВКонтакте</a></li>
+              <li><a class="footer__column-link page__link" href="#" target="_blank" rel="noopener"><img src="./images/tiktok-icon.svg" alt="ТикТок" class="footer__social-icon">TikTok</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>
