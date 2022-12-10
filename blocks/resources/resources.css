@@ -1,9 +1,9 @@
-.two-columns {
-  width: 80%;
+.resources {
   padding-top: 100px;
 
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 
   box-sizing: border-box;
 }
