@@ -1,7 +1,17 @@
+@keyframes move {
+  to {
+    transform: translate(10%, 0px);
+  }
+}
+
 .page__link {
   transition: opacity .1s linear;
 }
 
 .page__link:hover {
   opacity: 0.6;
+}
+
+.page__link:hover .page__link-arrow {
+  animation: move 0.3s ease-in-out 4 alternate;
 }

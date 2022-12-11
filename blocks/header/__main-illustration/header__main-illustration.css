@@ -6,6 +6,5 @@
   right: 0;
   bottom: 0;
 
-  background: url('../../../images/header-image.png');
-  background-size: cover;
+  object-fit: cover;
 }

@@ -6,10 +6,7 @@
   flex-direction: column;
   align-items: center;
 
-  background: url('../../images/feynman.png') #f2f2f2;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: 867px 637px;
+  background: url('../../images/feynman.png') #f2f2f2 no-repeat left bottom / 867px 637px;
 
   box-sizing: border-box;
 }
